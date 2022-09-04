@@ -1,0 +1,53 @@
+.map {
+
+  &__section {
+    margin-top: 150px;
+  }
+
+  &__block {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: $breakpoint768) {
+      margin-top: -10px;
+    }
+
+    @media (max-width: $breakpoint480) {
+      margin-top: -55px;
+    }
+
+    svg {
+      width: 70vmax;
+    }
+  }
+
+  &__services {
+    margin-top: 100px;
+
+    @media (max-width: $breakpoint992) {
+      margin-top: -90px;
+    }
+
+    @media (max-width: 537px) {
+      display: none;
+    }
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 13vmax;
+
+      &:nth-child(2) {
+        width: 11vmax;
+      }
+
+      &:last-child {
+        width: 11vmax;
+      }
+    }
+  }
+
+}
